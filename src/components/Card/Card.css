@@ -1,0 +1,103 @@
+/* Card.css */
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .card.reverse {
+    flex-direction: row-reverse; /* Image on left if reverse is true */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .card-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .card-content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .card-link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-link:hover {
+    background-color: #e68900;
+  }
+  
+  .card-image {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+ /* OpacityButton.css */
+
+.opacity-button {
+    position: relative;
+    /* background-color: #e0e0e0; Light background */
+    background: transparent;
+    border: 2px solid #ffffff; /* White border */
+    color: white; /* Darker text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px; /* Slightly rounded corners */
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s ease;
+  }
+  
+  .hover-background {
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start off-screen to the left */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1); /* Light white on hover */
+    transition: left 0.3s ease; /* Smooth transition */
+  }
+  
+  .opacity-button:hover .hover-background {
+    left: 0; /* Move background to fill from left to right */
+  }
+  
+  .opacity-button:hover {
+    color: #2842c2; /* Darker text color on hover */
+
+  }
+  
+  
+  
+  
+  

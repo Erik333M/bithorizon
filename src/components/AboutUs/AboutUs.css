@@ -1,0 +1,50 @@
+.about-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5rem;
+    color: white;
+  }
+  
+  .about-content {
+    text-align: left;
+  }
+  
+  .about-section {
+    margin-bottom: 40px;
+  }
+  
+  .about-section h2 {
+    font-size: 1.75rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .about-section ul {
+    margin-top: 15px;
+  }
+  
+  .about-section ul li {
+    font-size: 1rem;
+    color: #555;
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .about-section ul li strong {
+    color: white;
+  }
+  

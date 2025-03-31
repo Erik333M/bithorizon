@@ -1,0 +1,36 @@
+.header-main{
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;            
+    height: 70px;                   
+    background-color: rgb(244 244 244 / 23%);    
+    padding: 0 20px;                
+    color: white;
+}
+.title{
+    text-decoration: none;
+    font-size: 24px;
+    font-family: monospace;
+    color: #fff;
+    transition: color 0.4s ease-out;
+}
+
+.title:hover{
+  color: #010b21;
+}
+
+.nav-links {
+    display: flex;                 
+    gap: 20px;                    
+  }
+  
+  .nav-link {
+    color: white;                  /* Link color */
+    text-decoration: none;         /* Remove underline */
+    font-size: 16px;              /* Font size for links */
+    transition: color 0.4s ease-out;
+  }
+  
+  .nav-link:hover {
+    color: #010b21;
+  }

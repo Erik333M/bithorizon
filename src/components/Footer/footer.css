@@ -1,0 +1,55 @@
+/* Dark Theme Footer Styles */
+
+.footer {
+    background: linear-gradient(90deg, #1E293B, #0F172A);
+    color: #E2E8F0;
+    padding: 2.5rem 1.25rem;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .footer-section {
+    text-align: center;
+    padding: 1.25rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-section:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-icon {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-bottom {
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    font-size: 1.125rem;
+    font-weight: 600;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
