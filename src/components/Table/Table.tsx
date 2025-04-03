@@ -1,28 +1,30 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import "./table.css"; // Import the external CSS file
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import { TCoin } from '../../types/TCoin';
+import './table.css';
 
 const Table = () => {
-  const [coins, setCoins] = useState([]);
+  const [coins, setCoins] = useState<TCoin[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://api.coingecko.com/api/v3/coins/markets",
+          'https://api.coingecko.com/api/v3/coins/markets',
           {
             params: {
-              vs_currency: "usd",
-              order: "market_cap_desc",
+              vs_currency: 'usd',
+              order: 'market_cap_desc',
               per_page: 10,
               page: 1,
               sparkline: false,
             },
-          }
+          },
         );
+        console.log(JSON.stringify(response.data, null, 5));
         setCoins(response.data);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error('Error fetching data:', error);
       }
     };
 
@@ -46,7 +48,9 @@ const Table = () => {
                 <img src={coin.image} alt={coin.name} className="coin-icon" />
                 <span>{coin.name}</span>
               </td>
-              <td className="table-cell text-right">${coin.current_price.toLocaleString()}</td>
+              <td className="table-cell text-right">
+                ${coin?.current_price.toLocaleString()}
+              </td>
             </tr>
           ))}
         </tbody>

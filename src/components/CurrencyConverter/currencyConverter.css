@@ -181,7 +181,9 @@ h1:hover {
     font-size: 24px;
   }
 
-  .input-field, .dropdown, .submit-button {
+  .input-field,
+  .dropdown,
+  .submit-button {
     font-size: 16px;
   }
 }
@@ -192,7 +194,8 @@ h1:hover {
     padding: 15px;
   }
 
-  .input-field, .dropdown {
+  .input-field,
+  .dropdown {
     font-size: 14px;
   }
 
@@ -212,7 +215,9 @@ h1:hover {
     padding: 10px;
   }
 
-  .input-field, .dropdown, .submit-button {
+  .input-field,
+  .dropdown,
+  .submit-button {
     font-size: 14px;
   }
 

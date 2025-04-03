@@ -1,7 +1,7 @@
 import React from 'react';
 import './footer.css';
 import { PiTelegramLogoThin } from 'react-icons/pi';
-import { MdOutlineCurrencyExchange } from "react-icons/md";
+import { MdOutlineCurrencyExchange } from 'react-icons/md';
 import { TbLicense } from 'react-icons/tb';
 
 const Footer = () => {
@@ -28,7 +28,10 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} YourCryptoExchange. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} YourCryptoExchange. All rights
+          reserved.
+        </p>
       </div>
     </footer>
   );
