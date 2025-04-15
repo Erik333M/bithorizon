@@ -1,37 +1,23 @@
 import React from 'react';
 import './footer.css';
-import { PiTelegramLogoThin } from 'react-icons/pi';
-import { MdOutlineCurrencyExchange } from "react-icons/md";
-import { TbLicense } from 'react-icons/tb';
 
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-section">
-          <TbLicense size={40} className="footer-icon" />
-          <h4>About Us</h4>
-          <p>Learn more about our mission and values.</p>
-        </div>
-
-        <div className="footer-section">
-          <MdOutlineCurrencyExchange size={40} className="footer-icon" />
-          <h4>Services</h4>
-          <p>Explore our currency exchange services.</p>
-        </div>
-
-        <div className="footer-section">
-          <PiTelegramLogoThin size={40} className="footer-icon" />
-          <h4>Contact Us</h4>
-          <p>Get in touch with our support team.</p>
-        </div>
-      </div>
-
-      <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} YourCryptoExchange. All rights reserved.</p>
-      </div>
-    </footer>
-  );
-};
+function Footer() {
+    return (
+        <footer className="footer">
+            <div className="footer-container">
+                <div className="footer-links">
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/location">Location</a>
+                </div>
+                <div className="footer-info">
+                    <p>&copy; {new Date().getFullYear()} BitHorizon. All rights reserved.</p>
+                    <p>Email: <a href="mailto:info@bithorizon.ge">info@bithorizon.ge</a></p>
+                </div>
+            </div>
+        </footer>
+    );
+}
 
 export default Footer;
