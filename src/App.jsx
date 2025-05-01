@@ -1,15 +1,16 @@
-import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Header from './components/header/Header';
-import Home from './components/home/Home';
-import Contact from './components/Contact/Contact';
-import AboutUs from './components/AboutUs/AboutUs';
-import Location from './components/Location/Location';
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import './App.css'
+import AboutUs from './components/AboutUs/AboutUs'
+import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import { Header } from './components/Header/index.js'
+import { Home } from './components/Home/index.js'
+import Location from './components/Location/Location'
 import Policy from './components/Policy/Policy'
 
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
