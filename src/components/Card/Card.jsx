@@ -1,8 +1,8 @@
 import React from 'react';
-import './Card.css';
 import { useNavigate } from 'react-router-dom';
+import './Card.css';
 
-const Card = ({ title, text, image, linkUrl, reverse, logo }) => {
+const Card = ({ title, text, image = "", linkUrl, reverse, logo }) => {
   const navigate = useNavigate();
   
   return (

@@ -1,21 +1,24 @@
 import React from 'react'
-import './home.css'
-import Card from '../Card/Card'
-import CryptoTable from '../CryptoTable/CryptoTable'
+import { MdOutlineCurrencyExchange } from "react-icons/md"
 import { PiTelegramLogoThin } from 'react-icons/pi'
-import { MdOutlineCurrencyExchange } from "react-icons/md";
 import { TbLicense } from 'react-icons/tb'
+import Card from '../Card/Card'
+import CryptoConverter from '../CryptoTable/CryptoConverter'
 import Table from '../Table/Table'
+import './home.css'
 
-function Home() {
+const Home = () => {
   return (
     <div className='home'>
       <div className="hero-section">
-        <h1>WELCOME TO BIT HORIZON</h1>
-        <p>Explore the Future of Finance with Secure and Fast Crypto Trading</p>
+        <h1 className='home-title'>Welcome to Bit Horizon</h1>
+        <p className='home-description'>
+          Where Crypto Trading Meets Speed & Security
+          Buy, sell, and swap digital assets instantly on a powerful, secure exchange built for modern traders.
+          </p>
       </div>
       <Table/>
-      <CryptoTable/>
+      <CryptoConverter/>
       <div className="components-section">
         <Card
           title="About Us"

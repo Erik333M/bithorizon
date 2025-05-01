@@ -7,6 +7,21 @@
   width: 100%;
 }
 
+.home-title {
+  font-size: 3rem; 
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.home-description {
+  font-size: 1.25rem; 
+  color: #ccc; 
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.75rem;
+}
+
 .hero-section h1 {
   font-size: 3rem;
   margin-bottom: 20px;

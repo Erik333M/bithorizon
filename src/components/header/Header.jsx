@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import "./header.css";
+import React, { useState } from 'react'
+import "./header.css"
 
 function Header() {
     const [menuActive, setMenuActive] = useState(false);
@@ -12,7 +12,7 @@ function Header() {
         <div className='header-main'>
             <div className='container'>
             <a className='title' href='/'>
-            <img src={require('../../assets/LogoBit.PNG')} alt="Bit Horizon Logo" className="logo" />
+            <img src={require('../../assets/LogoBit.png')} alt="Bit Horizon Logo" className="logo" />
         </a>
             </div>
             <div>
@@ -23,9 +23,9 @@ function Header() {
 
                 {/* Mobile Navigation Links */}
                 <nav className={`nav-links ${menuActive ? 'active' : ''}`}>
-                    <a className='nav-link' href="/about" onClick={toggleMenu}>ABOUT</a>
-                    <a className='nav-link' href="/contact" onClick={toggleMenu}>CONTACT</a>
-                    <a className='nav-link' href="/location" onClick={toggleMenu}>LOCATION</a>
+                    <a className='nav-link' href="/about" onClick={toggleMenu}>About</a>
+                    <a className='nav-link' href="/contact" onClick={toggleMenu}>Contact</a>
+                    <a className='nav-link' href="/location" onClick={toggleMenu}>Location</a>
                     <a className='nav-link' href="/aml-policy" onClick={toggleMenu}>AML Policy</a>
                     <div className="email">
                       
